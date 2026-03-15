@@ -9,7 +9,6 @@ body {
     background-color: #fafafa;
 }
 
-
 .container {
     max-width: 1200px;
     width: 100%;
@@ -70,7 +69,7 @@ nav {
 /*! Hero Section Start */
 .hero {
     background-color: #5d3ebc;
-    height: 500px; /* Geniş alan */
+    height: 500px;
     width: 100%;
     position: relative;
 }
