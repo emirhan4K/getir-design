@@ -1,49 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
 }
 
-nav {
-    background-color: #3f19a0e1;;
-    height: 45px;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-}
 
 .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
+    height: 100%; 
+}
+
+/*! Nav Bar Start*/
+nav {
+    background-color: #4c3398;
+    height: 45px;
+    width: 100%;
 }
 
 .nav-left {
     display: flex;
     list-style: none;
+    height: 100%;
 }
 
 .nav-left li {
     color: #dbdbff;
     font-weight: 600;
     font-size: 14px;
-    padding: 13px 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; 
     cursor: pointer;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
 .nav-left li.active {
-    background-color: #714ed8;
-    color: rgb(252, 215, 50);
+    background-color: #5d3ebc; 
+    color: #ffd200; 
     border-radius: 5px 5px 0 0;
-    font-size: 15px;
 }
 
 .nav-right {
@@ -57,55 +62,98 @@ nav {
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
     cursor: pointer;
 }
+/*! Nav Bar End*/
 
-.hero{
-  background-color: #714ed8;
-  height: 450px;
+/*! Hero Section Start */
+.hero {
+    background-color: #5d3ebc;
+    height: 500px; /* Geniş alan */
+    width: 100%;
+    position: relative;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-left img{
+.hero-left img {
     width: 160px;
-    margin-top: 120px;
+    margin-bottom: 20px;
 }
 
-.hero-left h2{
+.hero-left h2 {
     color: white;
-    font-size: 2.1rem;
-    margin-top: 25px;
+    font-size: 2.5rem;
+    line-height: 1.2;
 }
+/*! Hero Section End */
 
-.hero-right{
+/*! Login Card Start*/
+.hero-right {
     background-color: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow:rgb(0, 0, 0 ,0.5);
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
 
-.login-card h5{
+.login-card h5 {
+    color: #5d3ebc;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*! Login Card End*/
+
+/*!Input Area Start */
+.input-container {
     display: flex;
-    justify-content: center;
-    color: #714ed8;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: 50px;
+    transition: 0.3s;
 }
 
-.input-container{
+.input-container:focus-within {
+    border-color: #5d3ebc;
+}
+
+.country-code {
+    background-color: #f5f5f5;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid #ddd;
+    padding: 0 15px;
+    border-right: 1px solid #ddd;
+    color: #333;
+    font-weight: bold;
 }
 
+input[type="tel"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/*! Input Area End*/
+
+/*! Button Start */
 .continue-btn {
     width: 100%;
-    background-color: yellow;
+    background-color: #ffd200;
+    color: #5d3ebc;
+    border: none;
+    padding: 15px;
     font-weight: bold;
-    border-radius: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
 }
+
+.continue-btn:hover {
+    background-color: #5d3ebc;
+    color: #ffd200;
+}
+/*! Button End */
