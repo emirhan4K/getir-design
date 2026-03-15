@@ -87,5 +87,25 @@ nav {
     background-color: white;
     padding: 50px;
     border-radius: 12px;
-    box-shadow: 1 rgb(0, 0, 0 ,0.1);
+    box-shadow:rgb(0, 0, 0 ,0.5);
+}
+
+.login-card h5{
+    display: flex;
+    justify-content: center;
+    color: #714ed8;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.continue-btn {
+    width: 100%;
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 6px;
 }
