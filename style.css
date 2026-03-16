@@ -165,7 +165,10 @@ input[type="tel"] {
 /*! Categories Start */
 .categories{
     background-color: white;
-    padding: 40px 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
 }
 
 .categories .container{
@@ -218,3 +221,17 @@ font-size: 15px;
     color: #5d3ebc;
 }
 /*! Categories End */
+
+/*! Advert Start */
+.banner-image-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px
+}
+
+.download-section{
+    display: block;
+    margin-top: 40px;
+}
+/*! Advert End */
+
