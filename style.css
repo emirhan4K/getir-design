@@ -64,6 +64,10 @@ nav {
     gap: 8px;
     cursor: pointer;
 }
+
+.nav-right span i{
+    font-size: 1rem;
+}
 /*! Nav Bar End*/
 
 /*! Hero Section Start */
@@ -157,3 +161,60 @@ input[type="tel"] {
     color: #ffd200;
 }
 /*! Button End */
+
+/*! Categories Start */
+.categories{
+    background-color: white;
+    padding: 40px 0;
+}
+
+.categories .container{
+    flex-direction: column; /* 'Her şeyi alt alta diz' komutu */
+    align-items: flex-start; /* Yazıyı en sola yaslar */
+}
+
+.container h3{
+color: #3e3e3e;
+font-weight: 600;
+margin-bottom:20px;
+font-size: 15px;
+}
+
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 20px 10px;
+}
+
+.image-wrapper img{
+    width: 54px;
+    height: 54px;
+    object-fit: contain; /* Resmin bozulmasını engeller */
+    transform: translateY(-2px)
+}
+
+.category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.category-item:hover{
+    background-color: #f3f0fe;
+    border-radius: 8px;
+    color: #5d3ebc;
+}
+
+.category-item span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.category-item:hover span {
+    color: #5d3ebc;
+}
+/*! Categories End */
