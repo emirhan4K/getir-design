@@ -235,3 +235,52 @@ font-size: 15px;
 }
 /*! Advert End */
 
+/*! Features Start */
+.features{
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+
+.features-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.feature-card{
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex:1; /* Tüm kartların eşit genişlikte olmasını sağlar */
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Üzerine gelince hafifçe yukar kayar */
+}
+
+.feature-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.feature-card h4 {
+    color: #5d3ebc;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #697488;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px;
+}
